@@ -714,11 +714,7 @@ h1.site-title {
 }
 .bypostauthor {
 }
-#respond {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  padding: 0px !important;
-}
+
 #respond > p, #respond p.comment-notes, p.logged-in-as {
   margin-bottom: 10px;
 }

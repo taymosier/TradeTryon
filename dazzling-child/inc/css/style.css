@@ -481,7 +481,7 @@ textarea {
 
 }
 
-.single .entry-title {
+ {
   color: black;
   font-size: 48px;
   margin: 0 0 25px 0;
@@ -1088,13 +1088,7 @@ h1.site-title {
 .comment-content a {
   word-wrap: break-word;
 }
-.bypostauthor {
-}
-#respond {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  padding: 0px !important;
-}
+
 #respond > p, #respond p.comment-notes, p.logged-in-as {
   margin-bottom: 10px;
 }
@@ -1504,12 +1498,12 @@ p.logged-in-as {
   .banner-header {
     color: white;
     font-family: "Lulo Clean", sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 900;
     height: auto;
     letter-spacing: 5px;
     padding: 50px 0 0 0;
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
     text-align: left;
     word-wrap: normal;
   }
@@ -1519,11 +1513,19 @@ p.logged-in-as {
   }
 
   .banner-logo {
+    /* float: left;
+    margin: 40px 0 0 12.5%; */
+    /* max-width: 95px;
+    min-width: 95px; */
+    /* width: 95px; */
     float: left;
-    margin: 40px 0 0 7.5%;
-    max-width: 95px;
-    min-width: 95px;
-    width: 95px;
+    margin: 7.5% 0 0 7.5%;
+    max-width: 80%;
+    /* max-height: 116px; */
+    width: 80%;
+    /* height: 116px; */
+    min-width: 80%;
+    /* min-height: 116px; */
   }
 
   .banner-span {
@@ -1571,7 +1573,7 @@ p.logged-in-as {
   }
 
   .comments-area {
-    padding: 0 5.5vw;
+    padding: 0 0.5vw 0 5.5vw;
   }
 
   .comments-link-container {
@@ -1687,10 +1689,10 @@ p.logged-in-as {
   }
 
   #logo {
-    max-width: 180px;
-    margin: 2.5vh auto 0 15vw;
+    max-width: 140px;
+    margin: 2vh auto 0 20vw;
     min-height: 4.5vh;
-    min-width: 80vw;
+    min-width: 60vw;
   }
 
   .image-container {
@@ -1718,14 +1720,14 @@ p.logged-in-as {
   }
 
   .main-content-area {
-    width: 93vw;
-    padding-left: 0;
+    width: 100vw;
+    padding: 0 7.5vw 0 0;
   }
 
   .menu-icon {
     height: 50px;
     width: 50px;
-    margin: 0% 0 0 7.5%;
+    margin: 0% 0 0 12.5%;
   }
 
   #menu-main {
@@ -1861,6 +1863,10 @@ p.logged-in-as {
     width: 95%;
   }
 
+  .row {
+    margin: 0;
+  }
+
   #secondary {
     display: block;
   }
@@ -1871,9 +1877,6 @@ p.logged-in-as {
     transition: .3s ease-in;
   }
 
-  .single #primary {
-    padding: 0 2.5vw;
-  }
 
   .single article{
     width: 93vw;
@@ -1882,10 +1885,91 @@ p.logged-in-as {
     text-align: center;
   }
 
-  .single .entry-meta {
-    margin: 0;
-    height: 80px;
+  .single .comment-body {
+    padding: 0;
+    width: 100%;
   }
+
+  .single .comment-content {
+    font-size: 16px;
+    letter-spacing: -.25px;
+    text-indent: 16px;
+    text-align: left;
+    margin: 15px 15px 0 30px;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .single .comment-list {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .single .comment-meta {
+    width: 60%;
+    text-align: left;
+    margin: 15% 0 0 30%;
+  }
+
+  .single .comments-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .single .entry-content-single {
+    margin: 30% 0 0 0;
+  }
+
+  .single .entry-meta {
+    display: none;
+  }
+
+  .single .entry-header .entry-meta {
+    display: inline;
+    line-height: .5px;
+  }
+
+  .single .entry-meta span {
+    margin: 0 auto 0 auto;
+  }
+
+  .single .entry-title {
+    color: black;
+    font-size: 24px;
+    padding: 0 5% 0 5%;
+    margin: 0;
+  }
+
+  .single .fa-chevron-left {
+    margin: 0;
+  }
+
+  .single .nav-next {
+    margin: 0 10vw 0 0;
+    width: 30%;
+  }
+
+  .single .nav-next a{
+    text-align: center;
+  }
+
+  .single .nav-previous {
+    margin: 0 0 0 12.5vw;
+    width: 30%;
+  }
+
+  .single .nav-previous a{
+    text-align: center;
+  }
+
+  .single #primary {
+    padding: 0 3vw;
+  }
+
+  .single .reply {
+    margin: 0 30px 50px 0;
+  }
+
 
   .single .entry-meta .posted-on {
     margin: 0;
@@ -1897,6 +1981,10 @@ p.logged-in-as {
 
   .single #main {
     margin: 0;
+  }
+
+  .single .page-header {
+    border-bottom: none;
   }
 
   .menu-main-container ul li a{
@@ -1949,11 +2037,16 @@ p.logged-in-as {
   }
 
   .banner-logo {
-    float: left;
+    /* float: left;
     max-width: 125px;
     width: 125px;
     margin: 65px 0 0 0;
-    min-width: 125px;
+    min-width: 125px; */
+    float: left;
+    margin: 60px 0 0 7.5%;
+    max-width: 80%;
+    width: 80%;
+    min-width: 80%;
   }
 
   .banner-span {
@@ -2039,8 +2132,9 @@ p.logged-in-as {
   .entry-content-single {
     line-height: 1.3;
     font-size: 20px;
-    padding: 0 25px 0 50px;
+    padding: 0 10vw 0 10vw;
     text-align: left;
+    text-indent: 15px;
   }
 
   .entry-content-single p {
@@ -2169,7 +2263,7 @@ p.logged-in-as {
   .menu-icon {
     height: 50px;
     width: 50px;
-    margin: 0 0 0 15%;
+    margin: 0 0 0 16%;
   }
 
   #menu-main {
@@ -2267,6 +2361,23 @@ p.logged-in-as {
     margin: 10vh 0 0 0;
   }
 
+  .single .comment-meta {
+      width: 60%;
+      text-align: left;
+      margin: 10% 0 0 100px;
+  }
+
+  .single .comment-title {
+    text-align: center;
+  }
+
+  .single .entry-title {
+    color: black;
+    font-size: 28px;
+    padding: 0 5vw 0 5vw;
+    margin: 0;
+  }
+
   .single #primary {
     padding: 0 2.5vw;
   }
@@ -2278,12 +2389,54 @@ p.logged-in-as {
     text-align: center;
   }
 
+  .single .comment {
+    list-style-type: none;
+  }
+
+  .single .comment-body {
+      max-width: 100%;
+      padding: 0;
+  }
+
+  .single .comment-content {
+    font-size: 16px;
+    letter-spacing: -.25px;
+    text-indent: 16px;
+    text-align: left;
+    margin: 15px 15px 0 30px;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .single .comment-list {
+    padding: 0 0 0 15px;
+  }
+
+  .single .comments-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .single .entry-meta {
-    margin: 0;
-    height: 80px;
+    display: none;
   }
 
   .single .entry-meta .posted-on {
+    margin: 0;
+  }
+
+  .single .entry-meta span {
+    margin: 0 auto 0 auto;
+  }
+
+  .single .entry-title {
+    color: black;
+    font-size: 28px;
+    padding: 0 5vw 0 5vw;
+    margin: 0;
+  }
+
+  .single .fa-chevron-left {
     margin: 0;
   }
 
@@ -2293,6 +2446,27 @@ p.logged-in-as {
 
   .single #main {
     margin: 0;
+  }
+
+  .single .nav-next {
+    margin-right: 5vw;
+    text-align: center;
+    width: 30%;
+  }
+
+  .single .nav-previous {
+    margin-left: 7.5vw;
+    text-align: center;
+    width: 30%;
+  }
+
+  .single .reply {
+    margin: 0 30px 50px 0;
+  }
+
+  .single .site-main [class*="navigation"] {
+    margin: 40px 0 1.5em;
+    overflow: hidden;
   }
 
   .menu-main-container ul li a{
@@ -2321,7 +2495,7 @@ p.logged-in-as {
     background-color: black;
     height: 245px;
     margin-top: 0;
-    padding: 60px 0 0 0;
+    padding: 0;
     width: 100vw;
   }
 
@@ -2344,9 +2518,14 @@ p.logged-in-as {
   }
 
   .banner-logo {
-    width: 135px;
+    /* width: 135px;
     float: left;
-    margin: 0 0 0 17vw;
+    margin: 0 0 0 17vw; */
+    float: left;
+    margin: 10% 0 0 17.5%;
+    max-width: 60%;
+    width: 60%;
+    min-width: 60%;
   }
 
   .banner-span {
@@ -2378,12 +2557,19 @@ p.logged-in-as {
     height: auto;
     width: 150px;
     text-align: left;
-    margin: -5px 0 0 5px;
-    background: white;
+    margin: -5px 0 0 -3px;
+    background: black;
   }
 
   .comments-link-container {
     margin: 60px 0 0 0;
+  }
+
+  .container-fluid .navbar-header {
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    /* transition: 0.425s ease-in-out; */
   }
 
   .entry-content {
@@ -2395,12 +2581,9 @@ p.logged-in-as {
   .entry-content-single {
     line-height: 1.3;
     font-size: 20px;
-    padding: 0 25px 0 50px;
+    padding: 0 5vw;
     text-align: left;
-  }
-
-  .entry-content-single p {
-
+    text-indent: 15px;
   }
 
   .entry-date {
@@ -2453,9 +2636,9 @@ p.logged-in-as {
   }
 
   .main-content-area {
-      width: 100vw;
-      height: auto;
-      padding-left: 0;
+    width: 100vw;
+    height: auto;
+    padding-left: 0;
   }
 
   #main .post {
@@ -2477,11 +2660,25 @@ p.logged-in-as {
   .menu-icon {
     width: 50px;
     height: 50px;
-    margin: 5px 0 0 15px;
+    margin: 2.5px 0 0 0px;
   }
 
   .menu-main-container {
     height: 110vh;
+  }
+
+  #menuMainContainer {
+    position: absolute;
+    padding: 0;
+    height: 100%;
+    width: 450px;
+  }
+
+  #menu-main-navbar {
+    width: auto;
+    height: auto;
+    top: 0;
+    margin: 0;
   }
 
   .posted-on {
@@ -2494,7 +2691,7 @@ p.logged-in-as {
   }
 
   .navbar-default .navbar-brand {
-    color: black;
+    color: white;
     height: auto;
     font-family: "Lulo Clean", sans-serif;
     font-size: 14px;
@@ -2510,15 +2707,75 @@ p.logged-in-as {
   }
 
   .single article{
-    width: 60vw;
-    margin-left: 14vw;
+    width: 80vw;
+    margin-left: 10vw;
     padding: 10px 0 0 0;
     text-align: center;
   }
 
+  .single [class*="navigation"] .nav-next {
+    margin: 0 100px 0 0;
+  }
+
+  .single [class*="navigation"] .nav-previous {
+    margin: 0 0 0 82.5px;
+  }
+
+  .single .comments-area {
+    padding: 0 5.5vw;
+  }
+
+  .single .comment-body {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .single .comment-content {
+    text-indent: 15px;
+    text-align: left;
+  }
+
+  .single .comment-content p {
+    padding: 0 25px 0 25px;
+  }
+
+  .single .comment-list {
+    padding: 0 5vw 0 5vw;
+    list-style-type: none;
+  }
+
+  .single .comment-meta {
+    width: 60%;
+    text-align: left;
+    margin: 50px 0 0 100px;
+  }
+
+  .single .comments-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
   .single .entry-meta {
-    margin: 10px 0 0 22vw;
-    height: 80px;
+    display: none;
+  }
+
+  .single .entry-title {
+    font-size: 32px;
+    height: 40px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .single .posted-on {
+    text-align: center;
+    width: auto;
+    line-height: 0.5;
+  }
+
+  .single .reply {
+    margin: 0 30px 50px 0;
   }
 }
 
@@ -2534,7 +2791,7 @@ p.logged-in-as {
     background-color: black;
     height: 245px;
     margin: -20px auto -20px auto;
-    padding: 61.25px 0 0 0;
+    padding: 0;
     width: 100vw;
     max-width: 100vw;
     min-width: 100vw;
@@ -2543,7 +2800,7 @@ p.logged-in-as {
   .banner-header {
     color: white;
     font-family: "Lulo Clean", sans-serif;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 900;
     height: auto;
     letter-spacing: 14px;
@@ -2559,9 +2816,11 @@ p.logged-in-as {
   }
 
   .banner-logo {
-    width: 135px;
     float: left;
-    margin: 10px 0 0 24vw;
+    margin: 65px 0 0 30%;
+    max-width: 40%;
+    width: 40%;
+    min-width: 40%;
   }
 
   .banner-span {
@@ -2585,7 +2844,7 @@ p.logged-in-as {
     width: 450px;
     padding: 0 10px 0 10px;
     height: auto;
-    margin: -5px 0 0 40vw;
+    margin: 30px 0 0 35vw;
   }
 
   .button-toggle-menu {
@@ -2593,7 +2852,7 @@ p.logged-in-as {
     width: 150px;
     text-align: left;
     margin: -5px 0 0 5px;
-    background: white;
+    background: black;
   }
 
   .comments-link-container {
@@ -2609,9 +2868,12 @@ p.logged-in-as {
   .entry-content-single {
     line-height: 1.3;
     font-size: 20px;
-    padding: 0 25px 0 50px;
+    padding: 15px 20vw 0 20vw;
     text-align: left;
+    text-indent: 15px;
   }
+
+
 
   .entry-content-single p {
 
@@ -2665,6 +2927,11 @@ p.logged-in-as {
     position: absolute;
   }
 
+  .main-content-area {
+    width: 100vw;
+    padding: 0;
+  }
+
   #main .post {
     margin-left: 30vw;
   }
@@ -2686,7 +2953,7 @@ p.logged-in-as {
   }
 
   .navbar-default .navbar-brand {
-    color: black;
+    color: white;
     height: auto;
     font-family: "Lulo Clean", sans-serif;
     font-size: 14px;
@@ -2708,15 +2975,90 @@ p.logged-in-as {
   }
 
   .single article{
-    width: 60vw;
-    margin-left: 14vw;
+    width: 100vw;
+    margin-left: 0;
     padding: 10px 0 0 0;
     text-align: center;
   }
 
+  .single .comment-body {
+    max-width: 80vw;
+    min-width: 80vw;
+    padding: 0;
+    margin: 0 10vw;
+  }
+
+  .single .comment-content {
+    text-indent: 15px;
+    text-align: left;
+  }
+
+  .single .comment-content p {
+    padding: 0 25px 0 25px;
+  }
+
+  .single .comment-list {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .single .comment-meta {
+    width: 60%;
+    text-align: left;
+    margin: 50px 0 0 100px;
+  }
+
+  .single .comments-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
   .single .entry-meta {
-    margin: 10px 0 0 22vw;
-    height: 80px;
+    display: none;
+  }
+
+  .single .entry-title {
+      font-size: 36px;
+      height: 40px;
+      margin: 10px 0 0 0;
+      text-align: center;
+      width: 100%;
+  }
+
+  .single [class*="navigation"] .nav-next {
+    margin: 25px 100px 0 0;
+  }
+
+  .single [class*="navigation"] .nav-previous {
+    margin: 25px 0 0 100px;
+  }
+
+  .single #main .section-divider {
+    display: none;
+  }
+
+  .single .posted-on {
+    text-align: center;
+    line-height: 0.75;
+    width: auto;
+  }
+
+  .single #primary {
+    padding: 0;
+  }
+
+  .single .reply {
+    margin: 0 30px 50px 0;
+  }
+
+  .single #respond {
+    background-color: transparent ;
+    box-shadow: none ;
+    padding: 0px ;
+  }
+
+  .single .row {
+    margin: 0;
   }
 }
 
@@ -2726,7 +3068,7 @@ p.logged-in-as {
     background-color: black;
     height: 245px;
     margin: -20px auto -20px auto;
-    padding: 61.25px 0 0 0;
+    padding: 0;
     width: 100vw;
     max-width: 100vw;
     min-width: 100vw;
@@ -2735,7 +3077,7 @@ p.logged-in-as {
   .banner-header {
     color: white;
     font-family: "Lulo Clean", sans-serif;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 900;
     height: auto;
     letter-spacing: 14px;
@@ -2752,8 +3094,13 @@ p.logged-in-as {
   }
 
   .banner-logo {
+    /* float: left;
+    margin: 0 0 0 20vw; */
     float: left;
-    margin: 0 0 0 30vw;
+    margin: 65px 0 0 20%;
+    max-width: 35%;
+    width: 35%;
+    min-width: 35%;
   }
 
   .banner-span {
@@ -2774,11 +3121,11 @@ p.logged-in-as {
     margin: 15px 25px 0 25px;
   }
 
-  .banner-text{
+  .banner-text {
     width: 450px;
     padding: 0 20px 0 10px;
     height: auto;
-    margin: -5px 0 0 45vw;
+    margin: 30px 0 0 33vw;
   }
 
   .button-toggle-menu {
@@ -2786,7 +3133,7 @@ p.logged-in-as {
     width: 150px;
     text-align: left;
     margin: -5px 0 0 5px;
-    background: white;
+    background: black;
   }
 
 
@@ -2802,12 +3149,9 @@ p.logged-in-as {
   .entry-content-single {
     line-height: 1.3;
     font-size: 20px;
-    padding: 0 25px 0 50px;
+    padding: 0 200px 0 200px;
     text-align: left;
-  }
-
-  .entry-content-single p {
-
+    text-indent: 15px;
   }
 
   .entry-date {
@@ -2815,7 +3159,6 @@ p.logged-in-as {
     margin: 0;
     width: 50%;
   }
-
 
   .entry-meta {
     width: 200px;
@@ -2857,6 +3200,11 @@ p.logged-in-as {
     margin: 5px 0 0 80px;
   }
 
+  .main-content-area {
+    width: 100vw;
+    padding: 0 2.5vw 0 2.5vw;
+  }
+
   #main .post {
     margin: 0 0 0 41vw;
   }
@@ -2877,7 +3225,7 @@ p.logged-in-as {
   }
 
   .navbar-default .navbar-brand {
-    color: black;
+    color: white;
     height: auto;
     font-family: "Lulo Clean", sans-serif;
     font-size: 14px;
@@ -2894,20 +3242,94 @@ p.logged-in-as {
   }
 
   .posted-on {
-    max-width: 90%;
-    text-align: left;
+    max-width: 100%;
+    text-align: center;
   }
 
-  .single article{
-    width: 60vw;
-    margin-left: 14vw;
+  #primary {
+    padding: 0;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .single article {
+    width: 100vw;
+    margin-left: 0;
     padding: 10px 0 0 0;
     text-align: center;
   }
 
+  .single #comment {
+    width: 80vw;
+  }
+
+  .single .comments-area {
+    text-align: center;
+  }
+
+  .single .comment-body {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .single .comment-content {
+    text-indent: 15px;
+    text-align: left;
+  }
+
+  .single .comment-content{
+    padding: 0 25px 0 25px;
+  }
+
+  .single .comment-list {
+    padding: 0 125px 0 125px;
+    list-style-type: none;
+  }
+
+  .single .comment-meta {
+    width: 60%;
+    text-align: left;
+    margin: 50px 0 0 100px;
+  }
+
   .single .entry-meta {
-    margin: 10px 0 0 22vw;
-    height: 80px;
+    display: none;
+  }
+
+  .single .entry-title {
+    font-size: 32px;
+    height: 40px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .single #main .section-divider {
+    display: none;
+  }
+
+  .single .main-content-area {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .single [class*="navigation"] .nav-previous {
+    margin: 10px 0 0 200px;
+  }
+  .single [class*="navigation"] .nav-next {
+    margin: 10px 200px 0 0;
+  }
+
+  .single .page-header {
+    border-bottom: none;
+  }
+
+  .single .reply {
+    margin: 0 30px 50px 0;
   }
 
   .menu-main-container ul li a{
@@ -2922,14 +3344,14 @@ p.logged-in-as {
     background-color: black;
     height: 245px;
     margin-top: -20px;
-    padding: 61.25px 25% 0 33%;
+    padding: 0 25% 0 0;
     width: 100vw;
   }
 
   .banner-header {
     color: white;
     font-family: "Lulo Clean", sans-serif;
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 900;
     letter-spacing: 16px;
     height: auto;
@@ -2943,6 +3365,10 @@ p.logged-in-as {
 
   .banner-logo {
     float: left;
+    margin: 65px 0 0 32.5%;
+    max-width: 35%;
+    width: 35%;
+    min-width: 35%;
   }
 
   .banner-span {
@@ -2953,9 +3379,9 @@ p.logged-in-as {
     margin-left: 188px;
   }
 
-  .banner-text{
+  .banner-text {
     width: 450px;
-    padding: 0 10px 0 10px;
+    padding: 15px 10px 0 10px;
     height: auto;
     margin: 0 0 0 150px;
   }
@@ -2988,12 +3414,12 @@ p.logged-in-as {
     width: 100%;
   }
 
-  .entry-content-single  {
-    min-height: 100vh;
-    font-size: 20px;
+  .entry-content-single {
     line-height: 1.3;
+    font-size: 20px;
+    padding: 0 225px 0 225px;
     text-align: left;
-    padding: 2px 10px 0 50px;
+    text-indent: 15px;
   }
 
   .entry-date {
@@ -3057,7 +3483,7 @@ p.logged-in-as {
   }
 
   #logo {
-    margin: 5px 0 0 80px;
+    margin: 7.5px 0 0 80px;
   }
 
   #main .post {
@@ -3070,6 +3496,11 @@ p.logged-in-as {
 
   #main .section-divider {
     max-width: 585px;
+  }
+
+  .main-content-area {
+    width: 100vw;
+    padding-left: 0;
   }
 
   .menu-icon {
@@ -3110,16 +3541,77 @@ p.logged-in-as {
     color: blue;
   }
 
-  .single article{
-    width: 60vw;
-    margin-left: 14vw;
+  #primary {
+    padding: 0;
+  }
+
+  .single article {
+    width: 100vw;
+    margin-left: 0;
     padding: 10px 0 0 0;
     text-align: center;
   }
 
+  .single .comments-area {
+    text-align: center;
+  }
+
+  .single .comment-body {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .single .comment-content {
+    line-height: 1.5;
+    padding: 0 25px 0 25px;
+    text-indent: 15px;
+    text-align: left;
+  }
+
+  .single .comment-form-comment {
+    padding: 0 200px 0 200px;
+    list-style-type: none;
+  }
+
+  .single .comment-list {
+    padding: 0 200px 0 200px;
+    list-style-type: none;
+  }
+
+  .single .comment-meta {
+    width: 60%;
+    text-align: left;
+    margin: 50px 0 0 100px;
+  }
+
+  .single .comments-title {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+  }
+
   .single .entry-meta {
-    margin: 10px 0 0 22vw;
-    height: 80px;
+    display: none;
+  }
+
+  .single .reply {
+    margin: 0 30px 50px 0;
+  }
+
+  .single .entry-title {
+    font-size: 36px;
+    height: 40px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .single [class*="navigation"] .nav-previous {
+    margin: 35px 0 0 20vw;
+  }
+
+  .single [class*="navigation"] .nav-next {
+    margin: 35px 20vw 0 0;
   }
 
   .menu-main-container ul li a{
@@ -3141,6 +3633,9 @@ p.logged-in-as {
 
   .banner-logo {
     margin: 5px 0 0 12.5vw;
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
   }
 
   .banner-text {

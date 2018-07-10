@@ -23,11 +23,11 @@
 <div id="page" class="hfeed site">
 
 	<div class="banner-container">
-		<img class="banner-logo" src="wp-content/themes/dazzling-child/images/tradetryon_logo.png" />
-		<div class="banner-text">
+		<img class="banner-logo" src="wp-content/themes/dazzling-child/images/banner.png" />
+		<!-- <div class="banner-text">
 			<h1 class="banner-header">
 				<a href="<?php echo esc_url( home_url( '/') ); ?>" >TRADE <br/>&TRYON</a>
-			</h1>
+			</h1> -->
 				<!-- <div class="banner-span"></div> -->
 			<!-- <h3 class="banner-tagline">A DAILY FEED FROM THE HEART OF THE QUEEN CITY</h3> -->
 		</div>

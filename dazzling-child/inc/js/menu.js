@@ -2,9 +2,18 @@ var menuCollapsed = true;
 
 jQuery(document).ready(function(){
   scroll_pos = 0;
+  if(getScreenWidth() >= 575){
+    jQuery('.menu-icon').attr('src', 'wp-content/themes/dazzling-child/images/hamburger.png');
+  }
 
   jQuery(document).scroll(function(){
     scroll_pos = jQuery(this).scrollTop();
+    if( userHasScrolledPastBanner() ){
+      jQuery('.menu-icon').attr('src', 'wp-content/themes/dazzling-child/images/tradetryon_logo.png');
+    }
+    if( !userHasScrolledPastBanner() ){
+      jQuery('.menu-icon').attr('src', 'wp-content/themes/dazzling-child/images/hamburger.png');
+    }
     if( menuIsCollapsedLeft() && !userHasScrolledPastBanner() && (getScreenWidth() > 575) ){
       changeButtonBackgroundToBlack();
       changeBrandTextToWhite();

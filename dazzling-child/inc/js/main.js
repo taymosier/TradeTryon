@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
   //delayAction function is defined in helpers and needs
   // to be generalized in order to use different actions
   makeArticlesOpaqueAfterSetTime(1000);
+  setBannerHeight();
   var scroll_pos = 0;
   var screenWidth = jQuery(window).width();
   screenSize = getScreenSize(screenWidth);
@@ -28,17 +29,25 @@ jQuery(document).ready(function($) {
     } else {
       jQuery('.site-title a').html('<span>TRADE</span><br /><span>& TRYON</span>');
     }
-
-    // setLogoLeftMargin();
-    // setMenuIcon();
+    setBannerHeight();
     adjustImageSizes(500);
   });
 });
 
-// function setLogoLeftMargin(){
-//   let margin = getScreenWidth()-180;
-//   return margin;
-// }
+function setBannerHeight(){
+  let ratio = getBannerImageDimensions();
+  let adjustedHeight = jQuery('.banner-logo').width()/ratio;
+  jQuery('.banner-logo').css('min-height', adjustedHeight);
+  jQuery('.banner-logo').css('max-height', adjustedHeight);
+  jQuery('.banner-logo').css('height', adjustedHeight);
+}
+
+function getBannerImageDimensions(){
+  let originalWidth = jQuery('.banner-logo')[0]['naturalWidth'];
+  let originalHeight = jQuery('.banner-logo')[0]['naturalHeight'];
+  let ratio = originalWidth/originalHeight;
+  return ratio;
+}
 
 function determineScreenSize(){
   let screenWidth = jQuery(window).outerWidth(true);
